@@ -21,4 +21,16 @@ function incrementarContador(){
     */
     valor++;
     document.getElementById("contador").value = valor;
+
+let modificador ='b';
+let color= 'black';
+if(valor %5 ==0){
+    color='yellow';
+}
+if(valor %3 ==0){
+    modificador='i';
+}
+
+    document.getElementById("salida").innerHTML ='<'+modificador+'>'+valor+'</'+modificador+'>'
+    document.getElementById("salida").style.color=color;
 }
